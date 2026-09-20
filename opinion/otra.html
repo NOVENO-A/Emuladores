@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opinión - Raspberry Pi & Python</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #c51a4a;
+            --primary-dark: #921033;
+            --python-blue: #306998;
+            --python-yellow: #ffd43b;
+            --dark-bg: #121824;
+            --card-bg: #1e2638;
+            --text-light: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .opinion-card {
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            border: 1px solid rgba(255,255,255,0.05);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            color: var(--text-light);
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 25px;
+        }   
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 8px;
+            background: #fff;
+            padding: 10px;
+        }
+
+        .btn-back {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 12px rgba(225, 29, 72, 0.3);
+        }
+
+        .btn-back:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(225, 29, 72, 0.4);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="opinion-card">
+        <h1>¡Si nos dejas tu opinión sería de gran ayuda para este proyecto!</h1>
+        <h2>Formulario de opinión</h2>
+        <img src="Qr.png" alt="Código QR para acceder al formulario de opinión">
+        
+        <div>
+            <!-- Ruta corregida para salir de la carpeta opinion y volver al index principal -->
+            <a href="../index.html" class="btn-back">← Volver al inicio</a>
+        </div>
+    </div>
+
+</body>
+</html>
